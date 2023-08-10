@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Landing Page - Arquitetura</title>
+</head>
+
+<body>
+    <!--CABECALHO-->
+    <header id="cabecalho">
+        <h1 id="cabecalho-titulo">Tradição em projetos de arquitetura</h1>
+        <p id="cabecalho-texto">Arquitetura residencial e comercial. </p>
+    </header>
+
+    <!--INFORMÇÕES-->
+    <div id="informaçoes">
+        <div class="informaçoes-container">
+            <h1>850</h1>
+            <p>empreendimentos construídos</p>
+        </div>
+        <div class="informaçoes-container" id="informaçoes-container-meio">
+            <h1>40</h1>
+            <p>anos de mercado e experiência</p>
+        </div>
+        <div class="informaçoes-container">
+            <h1>2,000,000</h1>
+            <p>m² em projetos construídos</p>
+        </div>
+    </div>
+    
+    <!--SOBRE-->
+    <div id="sobre">
+        <div id="sobre-texto">
+            <h1 id="sobre-texto-titulo">Arquitetos com História e Experiência.</h1>
+            <p>Nós realizamos desde 2002 projetos e gerenciamento de obras.<br> Com mais de 800 projetos e 2.000.000 de m² construídos, tendo como principal proposta transformar em realidade os sonhos de seus clientes, criando projetos personalizados, unindo a tradição e a modernidade em nossos projetos.</p>
+        </div>
+        <div id="sobre-imagens">
+            <img src="./img/ambiente1.svg" alt="Ambiente Moderno" class="ambientes" id="ambiente1" onclick="MudarAmbiente1()">
+            <img src="./img/ambiente2.jpg" alt="Ambiente moderno" class="ambientes" id="ambiente2" onclick="MudarAmbiente2()">
+            
+        </div>
+    </div>
+
+    <!--CONTATO-->
+    <div id="contato">
+        <h1 id="contato-titulo">Conheça mais sobre nossos serviços:</h1>
+        <form action="https://api.sheetmonkey.io/form/3uQyQZzTLLZGsR81xoiQdw" method="post">
+            <input type="name" name="Name" id="" placeholder="Nome" required>
+            <input type="email" name="Email" placeholder="E-mail" required>
+            <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+            <button type="submit">Fale Conosco</button>
+        </form>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
